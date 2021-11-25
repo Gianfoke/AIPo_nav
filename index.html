@@ -14,7 +14,7 @@
         <link rel="stylesheet" href="./resources/qgis2web.css">
         <style>
         .ol-geocoder.gcd-gl-container {
-            top: 100px!important;
+            top: 135px!important;
             left: .5em!important;
             width: 2.1em!important;
             height: 2.1em!important;
@@ -31,7 +31,7 @@
             height: 2.1875em;
         }
         .ol-touch .ol-geocoder.gcd-gl-container{
-            top: 130px!important;
+            top: 180px!important;
         }
         .ol-geocoder .gcd-gl-btn {
             width: 1.375em!important;
@@ -42,11 +42,11 @@
         </style>
 <style>
 .search-layer {
-  top: 135px;
+  top: 170px;
   left: .5em;
 }
 .ol-touch .search-layer {
-  top: 180px;
+  top: 230px;
 }
 </style>
         <style>
@@ -54,8 +54,8 @@
             background-color: #ffffff;
         }
         .ol-control button {
-            background-color: #ffffff !important;
-            color: #000000 !important;
+            background-color: #000000 !important;
+            color: #ffffff !important;
             border-radius: 0px !important;
         }
         .ol-zoom, .geolocate, .gcd-gl-control .ol-control {
@@ -66,10 +66,20 @@
             background: none !important;
         }
         .ol-scale-line-inner {
-            border: 2px solid #ffffff !important;
+            border: 2px solid #000000 !important;
             border-top: none !important;
             background: rgba(255, 255, 255, 0.5) !important;
             color: black !important;
+        }
+        </style>
+
+        <style>
+        .geolocate {
+            top: 65px;
+            left: .5em;
+        }
+        .ol-touch .geolocate {
+            top: 80px;
         }
         </style>
         <link href="resources/ol-geocoder.min.css" rel="stylesheet">
@@ -107,11 +117,11 @@
   border-top-color: #ffcc33;
 }
 .measure-control {
-  top: 65px;
+  top: 100px;
   left: .5em;
 }
 .ol-touch .measure-control {
-  top: 80px;
+  top: 130px;
 }
 </style>
         <style>
@@ -132,8 +142,6 @@
             </div>
         </div>
         <script src="resources/qgis2web_expressions.js"></script>
-<script src="resources/proj4.js"></script>
-        <script>proj4.defs('EPSG:32632','+proj=utm +zone=32 +datum=WGS84 +units=m +no_defs');</script>
         <script src="resources/polyfills.js"></script>
         <script src="./resources/functions.js"></script>
         <script src="./resources/ol.js"></script>
